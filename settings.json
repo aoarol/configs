@@ -1,0 +1,51 @@
+    "vim.insertModeKeyBindings": 
+    [
+        {
+            "before": ["j","k"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindings":
+    [
+        {
+            "before": ["<C-h>"], // Focus split window at left
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<C-j>"], // Focus split window at right
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["<C-k>"], // Focus split window at above
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<C-l>"], // Focus split window at below
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+    ],
+    "vim.handleKeys": { "<C-f>": false },
+    "vim.commandLineModeKeyBindingsNonRecursive":
+    [
+
+    ],
+    "vim.normalModeKeyBindingsNonRecursive":
+    [
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        // {
+        //     "before": ["<C-j>"],
+        //     "commands": ["editor.action.moveLinesDownAction"]
+        // }, // moveLineDown
+        // {
+        //     "before": ["<C-k>"],
+        //     "commands": ["editor.action.moveLinesUpAction"]
+        // }, // moveLineUp
+    ],
